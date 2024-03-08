@@ -1,0 +1,28 @@
+{
+  "employee": [
+    {
+      "id": "2",
+      "name": "GOURAV PRAJA",
+      "email": "gkp2505@gmail.com",
+      "phone": "7906517462"
+    },
+    {
+      "id": "b799",
+      "name": "XZXZX",
+      "email": "gouravprajapati47@gmail.com",
+      "phone": "7525864521"
+    },
+    {
+      "id": "7603",
+      "name": "XZXZX",
+      "email": "anshu@gmail.com",
+      "phone": "9898989898"
+    },
+    {
+      "id": "7c14",
+      "name": "assd",
+      "email": "santosh@gmail.com",
+      "phone": "9898989898"
+    }
+  ]
+}

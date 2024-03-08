@@ -1,0 +1,8 @@
+.update_box {
+    width: 30%;
+}
+@media screen and (max-width: 425px){
+    .update_box{
+        width: 100%;
+    }
+}
