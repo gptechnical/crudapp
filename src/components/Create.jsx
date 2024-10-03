@@ -18,7 +18,7 @@ const Create = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/employee', userData)
+    axios.post('https://gptechnical.github.io/api/db.json', userData)
     .then(res => {
       console.log(res);
       navigate('/');

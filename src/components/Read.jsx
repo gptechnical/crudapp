@@ -9,7 +9,7 @@ const Read = () => {
   const {id} = useParams();
 
     useEffect(() => {
-    axios.get('http://localhost:5000/employee/' + id)
+    axios.get('https://gptechnical.github.io/api/db.json' + id)
     .then(res => setData(res.data))
     .catch(err => console.log(err));
     }, [id]);

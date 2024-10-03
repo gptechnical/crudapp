@@ -5,17 +5,17 @@ import '../assets/styles/Update.css';
 
 const Update = () => {
   const navigate = useNavigate();
+  const {id} = useParams();
   const [userData, setUserData] = useState({
     name: "",
     email: "",
     phone: ""
   })
-  const {id} = useParams();
 
     useEffect(() => {
-    axios.get('http://localhost:5000/employee/' + id)
+    axios.get('https://gptechnical.github.io/api/db.json' + id)
     .then(res => {
-      setUserData(res.data)
+      setUserData(res.userData)
     })
     .catch(err => console.log(err));
     }, [id]);
@@ -26,7 +26,7 @@ const Update = () => {
     
     const handleUpdate =(e)=>{
       e.preventDefault();
-      axios.put('http://localhost:5000/employee/'+id, userData)
+      axios.put('https://gptechnical.github.io/api/db.json'+id, userData)
       .then(res => {
         console.log(res);
         navigate('/');
